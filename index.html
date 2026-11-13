@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="StudyCircle helps students find, create and join study groups.">
+
+    <title>StudyCircle | Find Your Study Community</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Main JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER AND NAVIGATION
+    =============================== -->
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="#home" class="brand" data-page="home">
+                <span class="brand-icon">S</span>
+                <span>Study<span class="brand-accent">Circle</span></span>
+            </a>
+
+            <button
+                class="mobile-menu-toggle"
+                id="mobileMenuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="#home"
+                   class="nav-link active"
+                   data-page="home"
+                   aria-current="page">
+                    Home
+                </a>
+
+                <a href="#find"
+                   class="nav-link"
+                   data-page="find">
+                    Find Groups
+                </a>
+
+                <a href="#create"
+                   class="nav-link"
+                   data-page="create">
+                    Create Group
+                </a>
+
+                <a href="#my-groups"
+                   class="nav-link"
+                   data-page="my-groups">
+                    My Groups
+                </a>
+
+                <a href="#find"
+                   class="nav-link nav-cta"
+                   data-page="find">
+                    Explore Groups
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ==============================
+             HOME PAGE
+        =============================== -->
+
+        <section id="home" class="page active">
+
+            <div class="hero-section">
+                <div class="container">
+
+                    <div class="hero-content">
+
+                        <div class="hero-label">
+                            <span class="status-dot"></span>
+                            Your learning community starts here
+                        </div>
+
+                        <h1>
+                            Learn Better.
+                            <br>
+                            Together.
+                        </h1>
+
+                        <p class="hero-description">
+                            Find students who share your academic goals,
+                            create study groups and make learning a
+                            collaborative experience.
+                        </p>
+
+                        <div class="hero-actions">
+
+                            <button
+                                class="btn btn-primary"
+                                type="button"
+                                data-go="find">
+                                Find a Study Group →
+                            </button>
+
+                            <button
+                                class="btn btn-outline"
+                                type="button"
+                                data-go="create">
+                                + Create a Group
+                            </button>
+
+                        </div>
+
+                        <p class="hero-note">
+                            Connect. Collaborate. Succeed.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Hero Illustration -->
+
+                    <div class="hero-visual" aria-label="Study group illustration">
+
+                        <div class="visual-circle circle-one"></div>
+                        <div class="visual-circle circle-two"></div>
+
+                        <div class="floating-card main-visual-card">
+
+                            <div class="visual-card-top">
+
+                                <div class="visual-icon">📚</div>
+
+                                <span class="visual-tag">
+                                    Study together
+                                </span>
+
+                            </div>
+
+                            <h3>Database Study Group</h3>
+
+                            <p>
+                                Working together towards better results.
+                            </p>
+
+                            <div class="visual-people">
+                                <span>A</span>
+                                <span>L</span>
+                                <span>S</span>
+                                <span class="people-more">+5</span>
+                            </div>
+
+                        </div>
+
+                        <div class="floating-card small-visual-card">
+
+                            <span class="small-card-icon">🎯</span>
+
+                            <div>
+                                <strong>Stay focused</strong>
+                                <p>Reach your study goals</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Features -->
+
+            <section class="intro-section">
+
+                <div class="container">
+
+                    <div class="section-heading">
+
+                        <p class="eyebrow">WHY STUDYCIRCLE?</p>
+
+                        <h2>
+                            Everything you need to study smarter
+                        </h2>
+
+                        <p>
+                            A simple platform designed to help students
+                            connect, organise and achieve more together.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-grid">
+
+                        <article class="feature-card">
+
+                            <div class="feature-icon blue-icon">
+                                🔍
+                            </div>
+
+                            <h3>Find Study Groups</h3>
+
+                            <p>
+                                Discover study groups based on your
+                                module, preferred day and meeting format.
+                            </p>
+
+                            <button
+                                class="text-link"
+                                type="button"
+                                data-go="find">
+                                Explore groups →
+                            </button>
+
+                        </article>
+
+
+                        <article class="feature-card">
+
+                            <div class="feature-icon orange-icon">
+                                👥
+                            </div>
+
+                            <h3>Create Your Own</h3>
+
+                            <p>
+                                Start a study group, choose a meeting
+                                schedule and invite other students.
+                            </p>
+
+                            <button
+                                class="text-link"
+                                type="button"
+                                data-go="create">
+                                Create a group →
+                            </button>
+
+                        </article>
+
+
+                        <article class="feature-card">
+
+                            <div class="feature-icon green-icon">
+                                📅
+                            </div>
+
+                            <h3>Manage Your Groups</h3>
+
+                            <p>
+                                Keep track of the study groups you have
+                                joined and the ones you have created.
+                            </p>
+
+                            <button
+                                class="text-link"
+                                type="button"
+                                data-go="my-groups">
+                                View my groups →
+                            </button>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Homepage Call To Action -->
+
+            <section class="container">
+
+                <div class="home-cta">
+
+                    <p class="eyebrow light-eyebrow">
+                        YOUR NEXT STUDY SESSION STARTS HERE
+                    </p>
+
+                    <h2>
+                        Don't study alone.
+                    </h2>
+
+                    <p>
+                        Find your people, share knowledge and grow together.
+                    </p>
+
+                    <button
+                        class="btn btn-light"
+                        type="button"
+                        data-go="find">
+                        Get Started →
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- ==============================
+             FIND GROUPS PAGE
+        =============================== -->
+
+        <section id="find" class="page">
+
+            <div class="container">
+
+                <div class="page-heading">
+
+                    <p class="eyebrow">DISCOVER YOUR COMMUNITY</p>
+
+                    <h1>Find Study Groups</h1>
+
+                    <p>
+                        Search for a group that matches your module,
+                        schedule and preferred meeting format.
+                    </p>
+
+                </div>
+
+
+                <!-- Search and Filters -->
+
+                <div class="filter-panel">
+
+                    <div class="search-box">
+
+                        <label for="searchInput">
+                            Search study groups
+                        </label>
+
+                        <input
+                            type="search"
+                            id="searchInput"
+                            placeholder="Search by group name, module or keyword..."
+                            autocomplete="off">
+
+                    </div>
+
+
+                    <div class="filter-grid">
+
+                        <div class="form-group">
+
+                            <label for="moduleFilter">
+                                Module
+                            </label>
+
+                            <select id="moduleFilter">
+
+                                <option value="">All Modules</option>
+                                <option value="DATA6222">DATA6222</option>
+                                <option value="PROG5121">PROG5121</option>
+                                <option value="OPSY5121">OPSY5121</option>
+                                <option value="SAND6221">SAND6221</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="formatFilter">
+                                Meeting Format
+                            </label>
+
+                            <select id="formatFilter">
+
+                                <option value="">All Formats</option>
+                                <option value="Online">Online</option>
+                                <option value="In-person">In-person</option>
+                                <option value="Hybrid">Hybrid</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="dayFilter">
+                                Meeting Day
+                            </label>
+
+                            <select id="dayFilter">
+
+                                <option value="">All Days</option>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        id="clearFilters">
+                        Clear Filters
+                    </button>
+
+                </div>
+
+
+                <!-- Search Results -->
+
+                <div class="results-heading">
+
+                    <h2>Available Study Groups</h2>
+
+                    <p
+                        class="results-count"
+                        id="resultsCount"
+                        aria-live="polite">
+                        Loading groups...
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="groups-grid"
+                    id="groupsContainer"
+                    aria-live="polite">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CREATE GROUP PAGE
+        =============================== -->
+
+        <section id="create" class="page">
+
+            <div class="container">
+
+                <div class="page-heading">
+
+                    <p class="eyebrow">BUILD YOUR COMMUNITY</p>
+
+                    <h1>Create a Study Group</h1>
+
+                    <p>
+                        Bring students together by creating your own
+                        study group.
+                    </p>
+
+                </div>
+
+
+                <div class="create-layout">
+
+
+                    <!-- Create Group Form -->
+
+                    <div class="create-form-card">
+
+                        <div class="form-heading">
+
+                            <h2>Group Information</h2>
+
+                            <p>
+                                Complete the details below to create
+                                your study group.
+                            </p>
+
+                        </div>
+
+
+                        <form id="createGroupForm">
+
+                            <div class="form-group">
+
+                                <label for="groupName">
+                                    Study Group Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="groupName"
+                                    name="groupName"
+                                    placeholder="e.g. Database Revision Team"
+                                    maxlength="60"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="groupModule">
+                                    Select Module *
+                                </label>
+
+                                <select
+                                    id="groupModule"
+                                    name="groupModule"
+                                    required>
+
+                                    <option value="">
+                                        Choose a module
+                                    </option>
+
+                                    <option value="DATA6222">
+                                        DATA6222
+                                    </option>
+
+                                    <option value="PROG5121">
+                                        PROG5121
+                                    </option>
+
+                                    <option value="OPSY5121">
+                                        OPSY5121
+                                    </option>
+
+                                    <option value="SAND6221">
+                                        SAND6221
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="groupDay">
+                                        Meeting Day *
+                                    </label>
+
+                                    <select
+                                        id="groupDay"
+                                        name="groupDay"
+                                        required>
+
+                                        <option value="">
+                                            Select day
+                                        </option>
+
+                                        <option value="Monday">Monday</option>
+                                        <option value="Tuesday">Tuesday</option>
+                                        <option value="Wednesday">Wednesday</option>
+                                        <option value="Thursday">Thursday</option>
+                                        <option value="Friday">Friday</option>
+                                        <option value="Saturday">Saturday</option>
+                                        <option value="Sunday">Sunday</option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="groupTime">
+                                        Meeting Time *
+                                    </label>
+
+                                    <input
+                                        type="time"
+                                        id="groupTime"
+                                        name="groupTime"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="groupFormat">
+                                    Meeting Format *
+                                </label>
+
+                                <select
+                                    id="groupFormat"
+                                    name="groupFormat"
+                                    required>
+
+                                    <option value="">
+                                        Choose meeting format
+                                    </option>
+
+                                    <option value="Online">
+                                        Online
+                                    </option>
+
+                                    <option value="In-person">
+                                        In-person
+                                    </option>
+
+                                    <option value="Hybrid">
+                                        Hybrid
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="groupDescription">
+                                    Group Description *
+                                </label>
+
+                                <textarea
+                                    id="groupDescription"
+                                    name="groupDescription"
+                                    rows="5"
+                                    maxlength="500"
+                                    placeholder="Tell other students what this group will focus on..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <button
+                                class="btn btn-primary form-submit"
+                                type="submit">
+                                + Create Study Group
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- Information Panel -->
+
+                    <aside class="create-info-card">
+
+                        <div class="info-icon">💡</div>
+
+                        <h3>Make learning collaborative</h3>
+
+                        <p>
+                            StudyCircle makes it easier for students
+                            to connect and learn from one another.
+                        </p>
+
+                        <div class="info-divider"></div>
+
+
+                        <div class="info-point">
+                            <span>✓</span>
+                            <span>Choose the right module.</span>
+                        </div>
+
+                        <div class="info-point">
+                            <span>✓</span>
+                            <span>Set a convenient meeting time.</span>
+                        </div>
+
+                        <div class="info-point">
+                            <span>✓</span>
+                            <span>Explain what your group will study.</span>
+                        </div>
+
+                        <div class="info-point">
+                            <span>✓</span>
+                            <span>Connect with other students.</span>
+                        </div>
+
+                        <div class="info-divider"></div>
+
+                        <p>
+                            Your created group will automatically
+                            appear under My Groups.
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             MY GROUPS PAGE
+        =============================== -->
+
+        <section id="my-groups" class="page">
+
+            <div class="container">
+
+                <div class="page-heading">
+
+                    <p class="eyebrow">YOUR STUDY SPACE</p>
+
+                    <h1>My Study Groups</h1>
+
+                    <p>
+                        View and manage the groups you have joined
+                        and created.
+                    </p>
+
+                </div>
+
+
+                <!-- Dashboard Statistics -->
+
+                <div class="dashboard-stats">
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            📚
+                        </div>
+
+                        <div>
+                            <p>Total Groups</p>
+                            <h3 id="totalGroups">0</h3>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            ✨
+                        </div>
+
+                        <div>
+                            <p>Groups Created</p>
+                            <h3 id="createdGroups">0</h3>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            👥
+                        </div>
+
+                        <div>
+                            <p>Groups Joined</p>
+                            <h3 id="joinedGroups">0</h3>
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- Personal Groups -->
+
+                <div class="results-heading">
+
+                    <h2>Your Groups</h2>
+
+                </div>
+
+
+                <div
+                    class="groups-grid"
+                    id="myGroupsContainer"
+                    aria-live="polite">
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <div class="footer-brand">
+                    StudyCircle
+                </div>
+
+                <p>
+                    Connecting students through collaborative learning.
+                </p>
+
+            </div>
+
+            <p class="copyright">
+                © <span id="currentYear">2026</span>
+                StudyCircle. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
